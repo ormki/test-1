@@ -1,10 +1,10 @@
 package com.devgame.rockapperscissor;
 
-import com.devgame.rockapperscissor.constants.AppConstants;
-import com.devgame.rockapperscissor.services.UserSystemInteraction;
-import com.devgame.rockapperscissor.services.SinglePlayerGame;
-import com.devgame.rockapperscissor.models.Computer;
-import com.devgame.rockapperscissor.models.Human;
+import com.devgame.rockapperscissor.constant.AppConstants;
+import com.devgame.rockapperscissor.io.UserSystemInteraction;
+import com.devgame.rockapperscissor.game.SinglePlayerGame;
+import com.devgame.rockapperscissor.player.Computer;
+import com.devgame.rockapperscissor.player.Human;
 
 import java.util.InputMismatchException;
 import java.util.List;
