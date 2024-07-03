@@ -1,7 +1,7 @@
-package com.devgame.rockapperscissor.player;
+package com.devgame.rockapperscissor.game.player;
 
 import com.devgame.rockapperscissor.exception.InvalidChoiceException;
-import com.devgame.rockapperscissor.choice.Choice;
+import com.devgame.rockapperscissor.game.choice.Choice;
 
 public abstract class Player {
     private java.lang.String name;

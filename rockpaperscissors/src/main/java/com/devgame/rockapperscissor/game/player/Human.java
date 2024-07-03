@@ -1,8 +1,8 @@
-package com.devgame.rockapperscissor.player;
+package com.devgame.rockapperscissor.game.player;
 
 import com.devgame.rockapperscissor.exception.InvalidChoiceException;
-import com.devgame.rockapperscissor.choice.ChoiceType;
-import com.devgame.rockapperscissor.choice.Choice;
+import com.devgame.rockapperscissor.game.choice.ChoiceType;
+import com.devgame.rockapperscissor.game.choice.Choice;
 import com.devgame.rockapperscissor.io.IOInteraction;
 
 public class Human extends Player {

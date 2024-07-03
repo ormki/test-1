@@ -1,7 +1,7 @@
 package com.devgame.rockapperscissor.game;
 
 import com.devgame.rockapperscissor.io.IOInteraction;
-import com.devgame.rockapperscissor.player.Player;
+import com.devgame.rockapperscissor.game.player.Player;
 
 import java.util.List;
 

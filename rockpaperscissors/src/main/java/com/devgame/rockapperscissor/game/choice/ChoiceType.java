@@ -1,4 +1,4 @@
-package com.devgame.rockapperscissor.choice;
+package com.devgame.rockapperscissor.game.choice;
 
 import java.util.Set;
 

@@ -1,9 +1,9 @@
 package com.devgame.rockapperscissor.game;
 
-import com.devgame.rockapperscissor.constant.AppConstants;
+import com.devgame.rockapperscissor.configuration.ConfigurationManager;
 import com.devgame.rockapperscissor.exception.InvalidChoiceException;
-import com.devgame.rockapperscissor.choice.Choice;
-import com.devgame.rockapperscissor.player.Player;
+import com.devgame.rockapperscissor.game.choice.Choice;
+import com.devgame.rockapperscissor.game.player.Player;
 import com.devgame.rockapperscissor.io.IOInteraction;
 
 import java.util.List;
@@ -23,7 +23,8 @@ public class SinglePlayerGame extends Game {
         Player player1 = players.get(0);
         Player player2 = players.get(1);
         int counterOfRetry = 0;
-        while (AppConstants.CHOICE_RETRY > counterOfRetry) {
+        int choiceRetry = ConfigurationManager.getIntProperty("choice.retry");
+        while (choiceRetry > counterOfRetry) {
             try {
                 player1.makeChoice();
                 player2.makeChoice();
@@ -36,7 +37,7 @@ public class SinglePlayerGame extends Game {
             counterOfRetry++;
         }
 
-        if (counterOfRetry >= AppConstants.CHOICE_RETRY) {
+        if (counterOfRetry >= choiceRetry) {
             throw new RuntimeException("Maximum retry limit is exceed for selecting incorrect choice value. Please restart game.");
         }
 

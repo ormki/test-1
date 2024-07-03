@@ -1,10 +1,10 @@
 package com.devgame.rockapperscissor;
 
-import com.devgame.rockapperscissor.constant.AppConstants;
+import com.devgame.rockapperscissor.configuration.ConfigurationManager;
 import com.devgame.rockapperscissor.io.UserSystemInteraction;
 import com.devgame.rockapperscissor.game.SinglePlayerGame;
-import com.devgame.rockapperscissor.player.Computer;
-import com.devgame.rockapperscissor.player.Human;
+import com.devgame.rockapperscissor.game.player.Computer;
+import com.devgame.rockapperscissor.game.player.Human;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -15,7 +15,8 @@ public class Main {
         UserSystemInteraction printIO = new UserSystemInteraction();
         int nTimes = 0;
         int counter = 0;
-        while (AppConstants.GAME_RETRY > counter) {
+        int gameRetry = ConfigurationManager.getIntProperty("game.retry");
+        while (gameRetry > counter) {
             try {
                 printIO.printHeadingUnderline("Enter how many times you want play games!");
                 nTimes = new Scanner(System.in).nextInt();
@@ -26,7 +27,7 @@ public class Main {
             counter++;
         }
 
-        if (counter >= AppConstants.GAME_RETRY) {
+        if (counter >= gameRetry) {
             printIO.printNewLine();
             printIO.printHeadingUnderline("Number of retry crosses maximum limit. Please start game after sometime.");
             return;

@@ -43,3 +43,11 @@ Esrc/main/java/com/devgame/rockapperscissor/game/SinglePlayerGame.java,5\2\5291
 Psrc/main/java/com/devgame/rockapperscissor/exception/InvalidChoiceException.java,f\1\f1b3d4ac81a4254d98c8c896b72c5260347cbb75
 u
 Esrc/main/java/com/devgame/rockapperscissor/constant/AppConstants.java,e\0\e0a0729051ff06ece79de277ef79d808ed30d8f5
+r
+Bsrc/main/java/com/devgame/rockapperscissor/game/choice/Choice.java,c\1\c1abc2ac08fcfb78d26cb3a22777fa2450032b19
+v
+Fsrc/main/java/com/devgame/rockapperscissor/game/choice/ChoiceType.java,c\0\c07759de9378507c3c309030ceeb872b6da10ac1
+s
+Csrc/main/java/com/devgame/rockapperscissor/configuration/properties,c\4\c4dc54e5e4fb4b58535f7bb3d48be1030991637e
+‚
+Rsrc/main/java/com/devgame/rockapperscissor/configuration/ConfigurationManager.java,d\4\d40a64617f5124d7dcdf4b84a887610f074ab21b
